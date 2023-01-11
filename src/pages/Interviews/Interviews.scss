@@ -1,0 +1,73 @@
+.interviews {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 2rem 0;
+  background: #1488cc; /* fallback for old browsers */
+  @media screen and (max-width: 900px) {
+    height: fit-content;
+  }
+  background: -webkit-linear-gradient(
+    to bottom,
+    #2b32b2,
+    #1488cc
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #2b32b2,
+    #1488cc
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  .interview-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media screen and (max-width: 754px) {
+      width: 60%;
+    }
+    // img {
+    //   width: 6rem;
+    //   margin-bottom: 1.5rem;
+    // }
+    h1 {
+      font-family: azonix;
+      font-size: 3rem;
+      margin-bottom: 2rem;
+      text-align: center;
+      @media screen and (max-width: 450px) {
+        font-size: 2rem;
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+  .interview-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media screen and (max-width: 900px) {
+      flex-direction: column;
+    }
+  }
+  .pixo-logo-interview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    img {
+      margin: 2rem 5rem;
+    }
+    .cv {
+      margin: 2rem 0;
+      padding: 0.8rem 2rem;
+      font-weight: 800;
+      background-color: #313131;
+      border-radius: 10px;
+      &:hover {
+        box-shadow: 0 0 5px 2px rgb(192, 192, 192);
+      }
+    }
+  }
+}

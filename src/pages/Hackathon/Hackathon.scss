@@ -1,0 +1,465 @@
+.Hackathon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  .alert{
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 3rem;
+    animation: animatethecolor 3s linear infinite;
+    @keyframes animatethecolor {
+      0%{
+        color: rgba(255,255,255,0.8);
+      }
+      30%{
+        color: rgba(255,255,255,0.5);
+      }
+      50%{
+        color: rgba(216, 84, 84, 0.8);
+      }
+      75%{
+        color: rgba(239, 40, 40, 0.8);
+      }
+      90%{
+        color: red;
+      }
+      100%{
+        color: rgba(255,255,255,0.5);
+      }
+    }
+  }
+  .HackathonFirstPage {
+    height: fit-content;
+    width: 100vw;
+    display: flex;
+    padding: 5rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    z-index: 100;
+  }
+  .HackathonHome {
+    height: fit-content;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .HackathonHeading {
+    font-size: 5rem;
+    font-weight: 900;
+    font-family: Gilroy-ExtraBold;
+    text-align: center;
+    @media (max-width: 480px) {
+      font-size: 2.7rem;
+    }
+  }
+  .HackathonDate {
+    font-size: 1.5rem;
+    @media (max-width: 350px) {
+      font-size: 1rem;
+      margin-bottom: 2rem;
+    }
+  }
+  .HackathonMotto {
+    font-size: 1.7rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  .AboutUsHackathon {
+    width: 100%;
+    background: rgba(22, 31, 46, 0.44);
+    font-size: 1.1rem;
+    margin: 3rem auto;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    @media (max-width: 480px) {
+      padding: 2rem;
+    }
+    h3 {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+    }
+  }
+  .AboutUsContent {
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    p {
+      text-align: justify;
+    }
+  }
+
+  .TimelineHackathon {
+    width: 100%;
+    margin: 3rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    h1 {
+      font-size: 2rem;
+      margin: 1rem;
+    }
+    .parent {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 49.9%;
+        height: 97%;
+        width: 5px;
+        border-radius: 10px;
+        background-color: white;
+        @media screen and (max-width: 760px) {
+          display: none;
+        }
+      }
+    }
+  }
+  .ProblemStatementHackathon {
+    width: 80vw;
+    margin-bottom: 5rem;
+    z-index: 100;
+    background: rgba(22, 31, 46, 0.44);
+    backdrop-filter: blur(4px);
+    border-radius: 12px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1 {
+      font-size: 2rem;
+      text-align: center;
+    }
+    a {
+      color: rgb(255, 123, 0);
+      margin: 0.5rem 0;
+      text-align: center;
+    }
+    .problem-name {
+      font-size: 2rem;
+      padding: 3rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      height: 80%;
+      text-shadow: 0 0 10px #007aff;
+      letter-spacing: 2px;
+      font-family:  Azonix;
+      &:hover{
+        transform: scale(1.2);
+        transition: 300ms;
+      }
+    }
+  }
+  .PrizesHackathon {
+    width: 80vw;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(22, 31, 46, 0.44);
+    backdrop-filter: blur(4px);
+    border-radius: 12px;
+    z-index: 100;
+    h1 {
+      font-size: 2rem;
+      margin-top: 1rem;
+    }
+  }
+  .prizeDiv1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin: 3rem 0 5rem 0;
+  }
+  .prizeDiv2 {
+    height: 40vh;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 5rem;
+    background: rgba(51, 55, 63, 0.44);
+    backdrop-filter: blur(4px);
+
+    border-radius: 12px;
+  }
+  .textInstructions {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 2rem 0;
+    li {
+      list-style-type: decimal;
+    }
+  }
+  .prizeDiv3 {
+    height: 60vh;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: rgba(51, 55, 63, 0.44);
+    backdrop-filter: blur(4px);
+
+    border-radius: 12px;
+    margin-bottom: 5rem;
+  }
+  .prizeCardDiv {
+    height: 25rem;
+    width: 18rem;
+  }
+  .prizeCardDiv1 {
+    height: 27rem;
+    width: 18rem;
+  }
+  .rules {
+    width: 100%;
+    max-width: 720px;
+    height: fit-content;
+    margin-top: 3rem;
+    background: rgba(22, 31, 46, 0.44);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    text-align: justify;
+    justify-content: center;
+    h1 {
+      font-size: 2rem;
+      margin: 1rem;
+    }
+    li {
+      list-style-type: decimal;
+      padding: 1rem;
+    }
+    p {
+      margin-bottom: 2rem;
+      text-align: center;
+      a {
+        color: rgb(255, 123, 0);
+      }
+    }
+  }
+  .SponsorDivHackathon {
+    width: 100%;
+    margin: 3rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .SponsorDivHackathonHeading {
+    font-size: 2.5rem;
+    margin-bottom: 1em;
+    letter-spacing: 2px;
+  }
+  .SponsorHackathon {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    img {
+      height: 50px;
+      @media (max-width: 450px) {
+        height: 30px;
+      }
+    }
+  }
+  .sponsorTitle {
+    position: absolute;
+    left: 3%;
+    top: 7%;
+    font-size: 1.4rem;
+    font-weight: 900;
+  }
+  .faqs {
+    margin: 3rem auto;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h1 {
+      font-size: 2rem;
+      margin: 1rem;
+    }
+  }
+  .faq-container {
+    width: 100%;
+    max-width: 720px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .faq-style-wrapper {
+    .faq-body {
+      .faq-row {
+        padding: 0.45rem 1rem;
+        background: rgba(22, 31, 46, 0.74);
+      }
+    }
+  }
+  .contactHackathon {
+    width: 100%;
+    max-width: 720px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h1 {
+      font-size: 2rem;
+      margin: 1rem;
+    }
+    .contact-box {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      form {
+        font-size: 1.2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        label {
+          margin-top: 3rem;
+        }
+
+        button {
+          background-color: #007aff;
+          padding: 0.3rem 2rem;
+          margin-top: 2rem;
+          border-radius: 5px;
+          text-transform: uppercase;
+          &:hover {
+            transform: scale(1.1);
+            transition: 0.3s;
+          }
+        }
+      }
+    }
+  }
+
+  .FooterHackathon {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #111;
+    padding: 2em;
+  }
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  // MEDIA QUERIES
+  @media screen and (max-width: 350px) {
+    .HackathonMotto {
+      font-size: 1.1rem;
+    }
+    .ProblemStatementHackathon {
+      h1 {
+        font-size: 2rem;
+        margin-top: 0.5rem;
+      }
+      .problem-name {
+        font-size: 1rem;
+      }
+    }
+    .contact-box {
+      width: 80vw;
+    }
+    .contactHackathon {
+      h1 {
+        font-size: 1.5rem;
+        margin: 0;
+      }
+    }
+  }
+  @media screen and (min-width: 350px) and (max-width: 475px) {
+    .ProblemStatementHackathon {
+      h1 {
+        font-size: 2rem;
+      }
+    }
+    .contact-box {
+      width: 80vw;
+    }
+  }
+  @media screen and (min-width: 475px) and (max-width: 1024px) {
+    .Hackathon {
+      .HackathonHeading {
+        font-size: 2.7rem;
+      }
+      .HackathonDate {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+      }
+      .HackathonMotto {
+        font-size: 1.1rem;
+      }
+      .ProblemStatementHackathon {
+        height: 40vh;
+        h1 {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}

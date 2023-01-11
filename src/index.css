@@ -1,0 +1,41 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+:root {
+  --gradient-head: linear-gradient(
+    45deg,
+    #00fced,
+    #0037a5,
+    #6933ff,
+    #0788ff,
+    #00fced
+  );
+  --bs-electric-purple: #6933ff;
+  --bs-deep-purple: #190f33;
+  --bs-dark-blue: #0037a5;
+  --bs-cloud-blue: #0788ff;
+  --bs-iridescent-blue: #00fced;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: Gilroy-Light;
+  overflow-x: hidden;
+  background: #000;
+  color: #fff;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+* {
+  box-sizing: border-box;
+}

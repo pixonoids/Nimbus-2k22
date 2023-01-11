@@ -1,0 +1,44 @@
+.sponsor-category {
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: fit-content;
+  padding: 1em;
+  margin: 1em 1em 2em 1em;
+
+  .title {
+    margin-bottom: 0.5em;
+  }
+
+  .sponsor-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    @include respond(phone) {
+      flex-direction: column;
+    }
+
+    .sponsor-card {
+      margin: 1em;
+      display: flex;
+      flex-direction: column;
+
+      .pic {
+        max-width: 18em;
+      }
+      .name {
+        padding: 0.3em;
+      }
+    }
+  }
+}

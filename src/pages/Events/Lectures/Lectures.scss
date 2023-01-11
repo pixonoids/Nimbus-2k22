@@ -1,0 +1,55 @@
+.lectures {
+  // display: flex;
+  padding: 2rem;
+  // flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
+  margin: auto;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='559' preserveAspectRatio='none' viewBox='0 0 1440 559'%3e%3cg clip-path='url(%26quot%3b%23SvgjsClipPath2245%26quot%3b)' fill='none'%3e%3crect width='1440' height='559' x='0' y='0' fill='url(%23SvgjsLinearGradient2246)'%3e%3c/rect%3e%3ccircle r='93.165' cx='81.05' cy='68.28' stroke='%23042446' stroke-opacity='1' stroke-width='2'%3e%3c/circle%3e%3ccircle r='93.165' cx='290.58' cy='356.83' stroke='%23042446' stroke-opacity='1' stroke-width='2'%3e%3c/circle%3e%3ccircle r='93.165' cx='831.19' cy='729.59' stroke='%23042446' stroke-opacity='1' stroke-width='2'%3e%3c/circle%3e%3ccircle r='105.105' cx='743.69' cy='547.21' stroke='%23042446' stroke-opacity='1' stroke-width='2'%3e%3c/circle%3e%3ccircle r='123' cx='1318.24' cy='382.38' stroke='%23042446' stroke-opacity='1' stroke-width='2'%3e%3c/circle%3e%3ccircle r='100.67' cx='729.68' cy='500.78' stroke='%23042446' stroke-opacity='1' stroke-width='2'%3e%3c/circle%3e%3ccircle r='186.145' cx='1206.31' cy='368.1' stroke='%23042446' stroke-opacity='1' stroke-width='2'%3e%3c/circle%3e%3ccircle r='116.75' cx='396.96' cy='481.48' stroke='%23042446' stroke-opacity='1' stroke-width='2'%3e%3c/circle%3e%3ccircle r='49.695' cx='671.11' cy='327.22' stroke='%23042446' stroke-opacity='1' stroke-width='2'%3e%3c/circle%3e%3ccircle r='124.375' cx='820.28' cy='122.69' stroke='%23042446' stroke-opacity='1' stroke-width='2'%3e%3c/circle%3e%3c/g%3e%3cdefs%3e%3cclipPath id='SvgjsClipPath2245'%3e%3crect width='1440' height='559' x='0' y='0'%3e%3c/rect%3e%3c/clipPath%3e%3clinearGradient x1='15.3%25' y1='-39.4%25' x2='84.7%25' y2='139.4%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient2246'%3e%3cstop stop-color='rgba(19%2c 22%2c 58%2c 1)' offset='0'%3e%3c/stop%3e%3cstop stop-color='rgba(0%2c 0%2c 0%2c 1)' offset='0.99'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  .heading {
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-family: Azonix, sans-serif;
+    @include gradienttext();
+    @media screen and (max-width: 430px) {
+      padding-top: 2rem;
+      font-size: 3rem;
+    }
+  }
+  .lectures-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  // coming soon scss code
+  .comingsoon {
+    position: absolute;
+    text-align: center;
+    top: 30%;
+    padding: 0.5rem;
+    font-weight: 900;
+    font-size: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px 10px rgba(14, 58, 204, 0.616);
+    height: 23rem;
+    width: 23rem;
+    @media screen and (max-width: 430px) {
+      height: 20rem;
+      width: 20rem;
+      font-size: 2rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+  }
+}

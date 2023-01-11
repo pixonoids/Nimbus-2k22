@@ -1,0 +1,130 @@
+.lecture-card {
+  height: fit-content;
+  margin: 2.5rem;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  align-items: center;
+  transition: 0.5s ease-in-out;
+  background: rgba(77, 75, 75, 0.2);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  font-family: Gilroy-Light;
+  @media screen and (max-width: 768px) {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  &:nth-child(odd) {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    @media screen and (max-width: 768px) {
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+  }
+  &:hover {
+    box-shadow: 0px 0px 5px 5px #007aff;
+    background: linear-gradient(to right, #0c0c31, #04041d, #080836, #01014263);
+    transform: scale(1.02);
+    transition: 0.3s;
+  }
+  img {
+    padding: 0;
+    border-radius: 10px;
+    width: 25%;
+    @media screen and (max-width: 990px) {
+      margin: 0.5rem;
+      width: 40%;
+      height: 100%;
+    }
+  }
+  .card-contents {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    margin: 1rem auto;
+    text-align: justify;
+    margin: 1rem 2rem;
+    min-width: 40%;
+    @media screen and (max-width: 768px) {
+      justify-content: center;
+      align-items: center;
+    }
+    .title {
+      font-size: 1.5rem;
+      font-weight: 900;
+      color: #5ac8fa;
+      text-transform: uppercase;
+      @media screen and (max-width: 430px) {
+        text-align: center;
+      }
+    }
+    .date {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      margin: 0.5rem 0;
+      .date-icon {
+        margin: 0.3rem 0.3rem;
+        font-size: 1.2rem;
+      }
+      .date-date {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .time {
+          color: #aaa;
+          padding: 0;
+        }
+        .start {
+          color: #a6ffcb;
+          margin: 0 1rem 0 1rem;
+          time {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+          }
+        }
+        .to {
+          display: inline-block;
+        }
+        .end {
+          color: #ed4264;
+          margin: 0 0 0 1rem;
+          time {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+          }
+        }
+      }
+    }
+    .registration-button {
+      background-color: rgb(0 80 174); /* Green */
+      border: none;
+      color: white;
+      padding: 0.5rem 1rem;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 1rem;
+      margin: 1rem 0rem;
+      cursor: pointer;
+      -webkit-transition-duration: 0.2s; /* Safari */
+      transition-duration: 0.2s;
+    }
+    .registration-button:hover {
+      letter-spacing: 2px;
+    }
+  }
+}

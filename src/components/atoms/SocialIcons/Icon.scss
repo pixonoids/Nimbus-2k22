@@ -1,0 +1,57 @@
+.icon-container {
+  color: white;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon-right {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 1%;
+  bottom: 10%;
+}
+.btn {
+  width: 3rem;
+  height: 3rem;
+  background: #000;
+  margin: 10px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  color: white;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+}
+.btn:hover {
+  transform: scale(1.1);
+  color: black;
+}
+.btn:before {
+  content: '';
+  position: absolute;
+  width: 150%;
+  height: 150%;
+  transform: rotate(45deg);
+  left: -100%;
+  top: 90%;
+  background-color: white;
+  z-index: -1;
+}
+.btn:hover::before {
+  animation: aaa 0.7s 1;
+  top: -10%;
+  left: -10%;
+}
+
+.icon-bottom {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  bottom: 1%;
+  right: 1%;
+}

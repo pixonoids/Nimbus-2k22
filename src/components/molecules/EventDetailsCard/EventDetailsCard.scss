@@ -1,0 +1,49 @@
+.event-details-card {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  @include respond(phone) {
+    flex-direction: column-reverse;
+  }
+
+  .pic {
+    max-width: 30em;
+    max-height: 40em;
+
+    @include respond(phone) {
+      width: 100%;
+      margin-bottom: 1em;
+    }
+  }
+
+  .content {
+    padding: 1em;
+    > * {
+      margin: 0.75em 0;
+    }
+    .name {
+      font-size: 3em;
+    }
+    .type {
+      padding: 0.5em;
+      display: inline-block;
+    }
+
+    .description {
+      color: #ccc;
+    }
+
+    .timing {
+      color: coral;
+      display: flex;
+      gap: 1em;
+    }
+
+    .registration-url {
+      padding: 0.5em 1em;
+    }
+  }
+}

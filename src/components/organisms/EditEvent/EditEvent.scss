@@ -1,0 +1,130 @@
+.edit-event {
+  h1 {
+    text-align: center;
+    margin: 1.5em 0;
+  }
+  .form-container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #111;
+
+    padding: 2em;
+
+    overflow-x: hidden;
+    @include respond(tab-port) {
+      width: 100%;
+    }
+
+    .form-row {
+      width: 100%;
+      display: flex;
+      margin: 2em 0;
+
+      @include respond(tab-port) {
+        flex-direction: column;
+      }
+    }
+    .form-group {
+      width: 100%;
+      margin-bottom: 1.5em;
+      margin-right: 1em;
+    }
+    label {
+      font-weight: bold;
+      color: #888;
+      font-size: 1.25em;
+    }
+
+    .form-control {
+      padding: 0.5em 1em;
+      transition: all 0.2s;
+      min-width: 20em;
+    }
+
+    .btn-submit {
+      width: 60%;
+      margin: auto;
+      padding: 1em 2em;
+      border: none;
+      color: white;
+      text-align: center;
+      font-weight: bold;
+      background: #080808;
+      letter-spacing: 0.5em;
+      transition: all 0.3s;
+      user-select: none;
+      cursor: pointer;
+      &:hover {
+        background: #222;
+      }
+    }
+
+    input,
+    textarea,
+    select {
+      background: transparent;
+      border: none;
+      height: 3em;
+      width: 100%;
+      background: none;
+
+      color: #fff;
+      border-radius: 0;
+      font-size: 1em;
+      outline: none !important;
+      border: none;
+      border-bottom: 1px solid #222;
+      &::placeholder {
+        color: #333;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+    textarea {
+      min-height: 5em;
+      height: fit-content;
+    }
+    option {
+      background: #080808;
+    }
+    .progress-horizontal {
+      width: 50%;
+      height: 4px;
+      margin: 0;
+      background-color: rgba(0, 0, 0, 0.34);
+    }
+
+    .bar-horizontal {
+      width: 50%;
+      height: 100%;
+      margin-left: 0;
+      // background-color: #43b02a;
+      background-color: #fff5;
+
+      animation-name: spinner;
+      animation-duration: 750ms;
+      animation-timing-function: ease-in-out;
+      animation-play-state: running;
+      animation-direction: alternate-reverse;
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes spinner {
+      0% {
+        width: 0;
+      }
+      50% {
+        width: 100%;
+        margin-left: 50%;
+      }
+      100% {
+        width: 0;
+        margin-left: 100%;
+      }
+    }
+  }
+}

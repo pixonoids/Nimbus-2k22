@@ -1,0 +1,169 @@
+.login {
+  font-size: 14px;
+  position: relative;
+  width: 100%;
+  max-width: 1280px;
+  margin: auto;
+  color: #aaa;
+  display: flex;
+  flex-direction: column;
+
+  .info {
+    display: flex;
+    max-width: 5em;
+    font-size: 3em;
+    margin-top: 0.7em;
+    letter-spacing: 0.2em;
+    margin-right: 1em;
+    @include respond(tab-port) {
+      display: none;
+    }
+    img {
+      margin-left: 2em;
+      width: 80%;
+    }
+  }
+
+  .info-2 {
+    margin-top: 2em;
+    color: #222;
+    letter-spacing: 0.2em;
+    font-size: 4em;
+    max-width: 100em;
+    width: fit-content;
+    background: url('./images/brush_bg.png');
+    background-repeat: no-repeat;
+    background-size: 110% 200%;
+    background-position: center;
+
+    padding: 5px;
+  }
+
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 30em;
+    width: 30em;
+    background: #080808;
+    // height: 30em;
+    margin-top: 5em;
+    padding: 2em;
+    // background: #000;
+    position: absolute;
+    right: 0;
+    overflow-x: hidden;
+    transition: 0.3s;
+    &:hover {
+      box-shadow: 2px 2px 10px 2px #fff;
+    }
+
+    .heading {
+      margin-bottom: 3em;
+      h1 {
+        margin-bottom: 0.1em;
+        font-weight: bold;
+      }
+      h3 {
+        color: #666;
+        font-family: monospace;
+        margin-top: 1em;
+      }
+    }
+
+    .form-row {
+      width: 100%;
+    }
+    .form-group {
+      width: 100%;
+      margin-bottom: 1.5em;
+    }
+    label {
+      font-weight: bold;
+      color: #888;
+    }
+
+    .form-control {
+      padding: 0.5em 1em;
+      transition: all 0.2s;
+    }
+    .error {
+      color: red;
+      padding: 0 1em 1em;
+      font-family: monospace;
+      font-size: 0.8em;
+    }
+
+    .btn-submit {
+      width: 100%;
+      padding: 1em 2em;
+      border: none;
+      color: white;
+      text-align: center;
+      font-weight: bold;
+      background: #111;
+      letter-spacing: 0.5em;
+      transition: all 0.3s;
+      user-select: none;
+      cursor: pointer;
+      &:hover {
+        background: #222;
+      }
+    }
+
+    input {
+      background: transparent;
+      border: none;
+      width: 100%;
+      background: none;
+      color: #fff;
+      border-radius: 0;
+      font-size: 1.2em;
+      outline: none !important;
+      border: none;
+      border-bottom: 1px solid #222;
+      &::placeholder {
+        color: #222;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  .progress-horizontal {
+    width: 50%;
+    height: 4px;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.34);
+  }
+
+  .bar-horizontal {
+    width: 50%;
+    height: 100%;
+    margin-left: 0;
+    // background-color: #43b02a;
+    background-color: #fff5;
+
+    animation-name: spinner;
+    animation-duration: 750ms;
+    animation-timing-function: ease-in-out;
+    animation-play-state: running;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes spinner {
+    0% {
+      width: 0;
+    }
+    50% {
+      width: 100%;
+      margin-left: 50%;
+    }
+    100% {
+      width: 0;
+      margin-left: 100%;
+    }
+  }
+}

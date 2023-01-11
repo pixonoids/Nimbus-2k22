@@ -1,0 +1,126 @@
+.calender-card-parent {
+  width: 50%;
+  padding: 1rem;
+  position: relative;
+  @media screen and (max-width: 760px) {
+    width: 100%;
+    padding: 1rem;
+    position: relative;
+  }
+  .card {
+    // backdrop-filter: blur(4px) saturate(180%);
+    // -webkit-backdrop-filter: blur(4px) saturate(180%);
+    // background-color: rgba(17, 25, 40, 0.75);
+    // border-radius: 12px;
+    // border: 1px solid rgba(255, 255, 255, 0.125);
+    // padding: 2rem 1rem;
+    @media screen and (max-width: 420px) {
+      // backdrop-filter: blur(16px) saturate(180%);
+      // -webkit-backdrop-filter: blur(16px) saturate(180%);
+      // background-color: rgba(17, 25, 40, 0.75);
+      // border-radius: 12px;
+      // border: 1px solid rgba(255, 255, 255, 0.125);
+      padding: 1rem 0.5rem;
+    }
+    .date {
+      // font-family: monospace;
+      font-size: 1rem;
+      margin-bottom: 0.2rem;
+      font-weight: 700;
+      letter-spacing: 0.5;
+      color: rgb(255, 123, 0);
+      @media screen and (max-width: 420px) {
+        // font-family: monospace;
+        font-size: 1rem;
+      }
+    }
+    .descp{
+      font-size: 1.2rem;
+    }
+    h3 {
+      letter-spacing: 1.5px;
+      margin-bottom: 0.2rem;
+      font-size: 2rem;
+      font-weight: 900;
+      @media screen and (max-width: 420px) {
+        letter-spacing: 1px;
+        margin: 0.5rem 0;
+        font-weight: 700;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+.left {
+  text-align: right;
+  align-self: flex-start;
+  padding-left: 10%;
+  &::after {
+    content: '';
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    border-radius: 100%;
+    background-color: #007aff;
+    z-index: 1;
+    top: 50%;
+    margin-left: 1.05rem;
+    transform: translate(-50%, -50%);
+  }
+  @media screen and (max-width: 420px) {
+    text-align: right;
+    align-self: flex-start;
+    padding-left: 10%;
+    &::after {
+      content: '';
+      height: 20px;
+      width: 20px;
+      position: absolute;
+      border-radius: 100%;
+      background-color: #007aff;
+      top: 50%;
+      margin-left: 1.05rem;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+.right {
+  text-align: left;
+  align-self: flex-end;
+  padding-right: 10%;
+  &::after {
+    content: '';
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    border-radius: 100%;
+    background-color: #007aff;
+    z-index: 1;
+    top: 50%;
+    margin-left: -0.9rem;
+    transform: translate(-50%, -50%);
+  }
+  @media screen and (max-width: 420px) {
+    text-align: left;
+    align-self: flex-end;
+    padding-right: 10%;
+    &::after {
+      content: '';
+      height: 20px;
+      width: 20px;
+      position: absolute;
+      border-radius: 100%;
+      background-color: #007aff;
+      top: 50%;
+      margin-left: -0.9rem;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+  // .calender-card-parent {
+  // }
+}

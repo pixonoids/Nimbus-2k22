@@ -1,0 +1,24 @@
+.loading {
+  position: absolute;
+  top: 0;
+  left : 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .loading-element {
+    // width: fit-content;
+    // border: 2px solid red;
+    position: relative;
+    padding: 2rem;
+    svg {
+      width: 100px;
+      margin: auto;
+      animation: rotation 3s ease-in-out infinite;
+    }
+  }
+  h3 {
+    text-align: center;
+  }
+}

@@ -1,0 +1,105 @@
+.mega-events-card {
+  height: 24rem;
+  width: 19rem;
+  overflow: hidden;
+  padding: 1rem;
+  margin: 2rem auto;
+  position: relative;
+  transition: 1s ease-in-out;
+  font-family: Gilroy-Light;
+  display: flex;
+  // justify-content: center;
+  align-items: center;
+  background: rgba(122, 121, 121, 0.15);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  transition: 0.5s;
+  &:hover {
+    transform: translateY(-10px);
+    transition: 500ms;
+    background-image: none;
+    background-color: black;
+    box-shadow: 0px 0px 10px 5px #007aff;
+    &::before {
+      opacity: 1;
+    }
+    .card-content {
+      opacity: 1;
+      transform: translateY(65%);
+    }
+  }
+  &::before,
+  ::after {
+    content: '';
+    transform: scale(0);
+    transform-origin: bottom left;
+    clip-path: ellipse(100% 44% at 15% 91%);
+
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    width: 110%;
+    height: 100%;
+    z-index: -5;
+    transition: 0.5s;
+    transition-timing-function: ease-in-out;
+  }
+  &::before {
+    background: rgba(0, 86, 167, 0.9);
+  }
+  &::after {
+    background: white;
+    width: 200%;
+    height: 200%;
+  }
+  &:hover::before,
+  &:hover::after {
+    transform: scale(1);
+  }
+  @media screen and(min-width:450px) and (max-width: 768px) {
+    flex-wrap: nowrap;
+  }
+  @media screen and(min-width:768px) and (max-width: 1124px) {
+    flex-wrap: nowrap;
+  }
+  .card-content {
+    position: relative;
+    transform: translateY(800%);
+    transition: 0.8s all;
+    text-align: left;
+    color: white;
+    @media screen and(max-width:430px) {
+      transform: translateY(800%);
+      padding: 1rem;
+    }
+    @media screen and(min-width:430px) and (max-width: 760px) {
+      transform: translateY(800%);
+      padding: 1rem;
+    }
+    @media screen and(min-width:760px) and (max-width: 1124px) {
+      transform: translateY(800%);
+      padding: 1.1rem;
+    }
+  }
+  .card-title {
+    margin-bottom: 0.2rem;
+    text-align: left;
+    font-family: Gilroy-ExtraBold;
+    font-size: 1.6rem;
+    @media screen and (max-width: 450px) {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+  }
+  .card-info {
+    padding: 0.6rem 0;
+  }
+  .date {
+    font-size: 0.9rem;
+    padding: 0.7rem 0;
+  }
+}

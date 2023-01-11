@@ -1,0 +1,54 @@
+.dashboard {
+  padding: 1em 1em;
+  display: flex;
+  flex-direction: column;
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2em 0;
+    .user {
+      font-size: 2em;
+    }
+    .logout {
+      &:hover {
+        color: red;
+      }
+    }
+  }
+
+  .container {
+    button {
+      padding: 0 1em;
+
+      &:hover {
+        text-decoration: underline;
+        text-underline-offset: 5px;
+      }
+    }
+    .admin-event-details {
+      padding: 1em;
+    }
+    .your-events {
+      h1 {
+        text-align: center;
+        font-weight: bold;
+        font-style: italic;
+        font-size: 2.5em;
+        margin-bottom: 2em;
+      }
+      .ctrl {
+        text-align: center;
+      }
+      .events-list {
+        .empty {
+          text-align: center;
+          margin: 2em;
+          color: red;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,160 @@
+.home {
+  height: 100vh;
+  width: fit-content;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+  .udanta-text {
+    width: 100%;
+    height: 50%;
+    z-index: 98;
+    font-family: Azonix;
+    @media screen and (max-width: 450px) {
+      left: 25%;
+      bottom: 0;
+    }
+  }
+  .udanta-text text {
+    text-transform: uppercase;
+    animation: stroke 9s infinite alternate;
+    stroke-width: 1;
+    stroke: #fff;
+    font-size: 2.5rem;
+    letter-spacing: 5px;
+    @media screen and (max-width: 450px) {
+      font-size: 2.5rem;
+    }
+    @media screen and (min-width: 450px) and (max-width: 900px) {
+    }
+  }
+  .date {
+    font-size: 1rem;
+    color: rgb(133, 131, 131);
+    z-index: 10;
+    font-family: monospace;
+  }
+  .pop-up-text {
+    h1 > span {
+      top: 10%;
+      left: 0%;
+      position: absolute;
+      z-index: 97;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      text-align: center;
+      font-family: Azonix;
+      font-size: 4rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 10px;
+      background: linear-gradient(#007aff, #5ac8fa, #007aff);
+      -webkit-background-clip: text;
+      color: transparent;
+      display: none;
+      @media screen and (max-width: 450px) {
+        display: block;
+        top: 15%;
+      }
+    }
+    h1 > span:nth-child(1) {
+      z-index: 2;
+    }
+    h1 > span:nth-child(2) {
+      z-index: 1;
+      text-shadow: 1px 1px 0 #262626, 2px 2px 0 #262626, 3px 3px 0 #262626,
+        4px 4px 0 #262626, 5px 5px 0 #262626, 1px 1px 0 #262626,
+        6px 20px 20px rgba(0, 0, 0, 1), -1px -1px 0 #fff;
+    }
+    h1 > span {
+      @media screen and (max-width: 450px) {
+        font-size: 2.5rem;
+        letter-spacing: 1px;
+        text-align: center;
+        // margin-top: -15rem;
+      }
+      @media screen and (min-width: 450px) and (max-width: 900px) {
+        font-size: 3rem;
+      }
+      @media screen and (min-width: 900px) and (max-width: 1200px) {
+      }
+    }
+  }
+  .nimbus-theme {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 6rem;
+  }
+
+  .nith-logo {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    left: 1%;
+    box-shadow: 0px 0px 17px -2px #5ac8fa9e;
+    border-radius: 50%;
+    top: 2%;
+    // filter: grayscale(50);
+    @media screen and (max-width: 450px) {
+      left: 5%;
+    }
+  }
+  .home-audio-button {
+    position: absolute;
+    left: 1rem;
+    bottom: 1rem;
+  }
+  .pixo-logo {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    @media screen and (max-width: 450px) {
+      bottom: -5%;
+    }
+    img {
+      width: 1.7rem;
+      margin-left: 0.25rem;
+      box-shadow: 0px 0px 17px -2px #5ac8fa9e;
+      border-radius: 50%;
+    }
+    .pixo-text {
+      font-size: 0.8rem;
+      opacity: 0;
+      font-weight: 900;
+      transition: 0.5s ease-out;
+    }
+
+    &:hover {
+      img {
+        animation: rotation 1s ease-out;
+      }
+      .pixo-text {
+        transform: translateX(-5%);
+        opacity: 0.8;
+      }
+    }
+  }
+
+  .theme-line {
+    font-size: 1.1rem;
+    letter-spacing: 0.7rem;
+
+    color: #5ac8fa;
+    z-index: 98;
+    font-family: Azonix;
+    @media screen and (max-width: 450px) {
+      font-size: 1.2rem;
+      letter-spacing: 0px;
+      left: 5%;
+    }
+  }
+}

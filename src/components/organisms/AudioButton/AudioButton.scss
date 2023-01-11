@@ -1,0 +1,16 @@
+.audio-button {
+  font-size: 2rem;
+  z-index: 100;
+
+  left: 1%;
+  bottom: 3%;
+  position: fixed;
+  @media screen and (max-width: 430px) {
+    left: 3%;
+    bottom: 3%;
+    position: fixed;
+  }
+  @media screen and (max-width: 430px) {
+    display: none;
+  }
+}

@@ -1,0 +1,84 @@
+.Entering {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-family: Gilroy-Light;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-image: linear-gradient(
+    to right bottom,
+    #000000,
+    #070707,
+    #0e0e0e,
+    #131313,
+    #171717
+  );
+  .heading {
+    font-family: Azonix;
+    font-size: 6rem;
+    white-space: nowrap;
+
+    @include gradienttext();
+
+    @media screen and (max-width: 450px) {
+      font-size: 4rem;
+      white-space: normal;
+    }
+    @media screen and (min-width: 450px) and (max-width: 800px) {
+      font-size: 3.5rem;
+    }
+  }
+  .text-loop {
+    font-weight: 600;
+    overflow: hidden;
+    height: 5.5rem;
+    font-size: 5rem;
+    @media screen and (max-width: 480px) {
+      height: 5rem;
+      font-size: 3rem;
+    }
+    @media screen and (min-width: 480px) and (max-width: 800px) {
+      height: 5.5rem;
+      font-size: 4rem;
+    }
+    .content__container__list {
+      text-align: center;
+      list-style: none;
+      animation-name: change;
+      animation-duration: 14s;
+      animation-iteration-count: infinite;
+    }
+    .content__container__list__item {
+      line-height: 6rem;
+    }
+  }
+  .enter-button {
+    height: 7.5rem;
+    width: 7.5rem;
+    border: 2px solid grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 1.1rem;
+    cursor: pointer;
+    letter-spacing: 0.05em;
+    font-weight: 700;
+    z-index: 100;
+    &:hover {
+      transform: scale(0.9);
+      transition: 300ms;
+      border: 2px solid white;
+    }
+  }
+  .audio-button {
+    font-size: 2rem;
+    z-index: 100;
+
+    left: 1%;
+    bottom: 3%;
+    position: static;
+  }
+}

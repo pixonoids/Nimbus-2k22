@@ -1,0 +1,35 @@
+.hoverDiv {
+  width: fit-content;
+  position: absolute;
+  bottom: 2%;
+  left: 50%;
+  border-radius: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 1rem;
+  background: rgba(87, 87, 87, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.096);
+  transform: translateX(-50%);
+  z-index: 99;
+  padding: 0.5rem;
+  @media screen and (max-width: 450px) {
+    display: none;
+  }
+}
+.hoverDiv li {
+  padding: 0 0.5rem;
+  list-style-type: none;
+  transition: 200ms;
+  &:hover {
+    letter-spacing: 1px;
+    transition: 200ms;
+    cursor: pointer;
+
+    transform: scale(1.2);
+    padding: 0 0.8rem;
+    color: #5ac8fa;
+    text-shadow: 0 0 3px #5ac8fa;
+    font-weight: 700;
+  }
+}

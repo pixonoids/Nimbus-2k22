@@ -1,0 +1,65 @@
+.hsponsor-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: fit-content;
+  .hsponsor-image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 2rem;
+    font-family: Gilroy-Light;
+    @media screen and (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .card-images {
+    margin: 0.5em;
+  }
+
+  .hsponsor-image-container1 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 60%;
+  }
+
+  .goldTitle {
+    font-size: 2rem;
+    color: gold;
+    margin: 1rem;
+    text-align: center;
+    @media screen and (max-width: 350px) {
+      font-size: 1rem;
+    }
+    @media screen and (min-width: 350px) and (max-width: 520px) {
+      font-size: 1.25rem;
+    }
+  }
+  .silverTitle {
+    font-size: 2rem;
+    color: silver;
+    margin: 1rem;
+    text-align: center;
+    @media screen and (max-width: 350px) {
+      font-size: 1rem;
+    }
+    @media screen and (min-width: 350px) and (max-width: 520px) {
+      font-size: 1.4rem;
+    }
+  }
+  .hsponsor-image-container2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 60%;
+    margin-bottom: 1rem;
+  }
+}
